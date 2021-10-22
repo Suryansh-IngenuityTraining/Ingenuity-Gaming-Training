@@ -1,27 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>To-do List</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
-<body>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      body {
+        background-image: linear-gradient(to right, red, blue);
+      }
+
+      h1 {
+        text-align: center;
+        margin-top: 50px;
+        color: white;
+        margin-bottom: 60px;
+        font-size: 35px;
+      }
+      form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        flex-direction: row;
+      }
+      .todo-input {
+        border-radius: 20px 0 20px 0;
+        height: 40px;
+        width: 25%;
+        border: none;
+        outline: none;
+        font-size: 20px;
+        padding: 25px;
+        margin: 0;
+      }
+      .todo-button {
+        color: blue;
+        width: 40px;
+        height: 40px;
+        padding: 5px;
+        border-radius: 20px 0 20px 0;
+        background-color: white;
+        /* border-radius: 100%; */
+        border: none;
+        margin-left: 5px;
+        outline: none;
+        cursor: pointer;
+      }
+      .todo-button:active {
+        background-color: lightskyblue;
+        color: white;
+      }
+
+      .todo-button i {
+        font-size: 30px;
+      }
+    </style>
+  </head>
+  <body>
     <h1>To-do List</h1>
     <form>
-        <input type="text" class="todo-input">
-        <button class="todo-button">
-            <i class="fa fa-location-arrow" aria-hidden="true"></i>
-        </button>
+      <input type="text" class="todo-input" />
+      <button class="todo-button">
+        <i class="fa fa-location-arrow" aria-hidden="true"></i>
+      </button>
     </form>
     <p></p>
 
     <div class="todo-container">
-        <ul class="todo-list">
-
-            
-
-        </ul>
+      <ul class="todo-list"></ul>
     </div>
-</body>
+  </body>
 </html>
