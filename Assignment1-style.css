@@ -10,7 +10,7 @@
       rgba(52, 57, 82, 0.7),
       rgba(163, 177, 233, 0.7)
     ),
-    url(img/iheb-ab-OBufvGMaBaQ-unsplash.jpg);
+    url(Assignment1-img/iheb-ab-OBufvGMaBaQ-unsplash.jpg);
   background-position: center;
   background-size: cover;
   position: relative;
@@ -284,7 +284,7 @@ h3 {
   margin: 100px auto;
   width: 80%;
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url(img/magnet-me-315vPGsAFUk-unsplash.jpg);
+    url(Assignment1-img/magnet-me-315vPGsAFUk-unsplash.jpg);
   background-position: center;
   background-size: cover;
   border-radius: 10px;
@@ -326,7 +326,7 @@ h3 {
   height: 50vh;
   width: 100%;
   background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
-    url(img/jasmine-coro-3NgnoYlNKdk-unsplash.jpg);
+    url(Assignment1-img/jasmine-coro-3NgnoYlNKdk-unsplash.jpg);
   background-position: center;
   background-size: cover;
   text-align: center;
