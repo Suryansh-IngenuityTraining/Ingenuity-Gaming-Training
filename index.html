@@ -4,122 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>To-do List</title>
+    <link rel="stylesheet" href="style.css">
     <link
       rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <style>
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        font-family: Arial, Helvetica, sans-serif;
-      }
-      body {
-        background-image: linear-gradient(to right, red, blue);
-      }
-
-      h1 {
-        text-align: center;
-        margin-top: 50px;
-        color: white;
-        margin-bottom: 60px;
-        font-size: 35px;
-      }
-      form {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
-        flex-direction: row;
-      }
-      .list-input {
-        border-radius: 20px 0 20px 0;
-        height: 40px;
-        width: 25%;
-        border: none;
-        outline: none;
-        font-size: 20px;
-        padding: 25px;
-        margin: 0;
-      }
-      .list-button {
-        color: blue;
-        width: 40px;
-        height: 40px;
-        padding: 5px;
-        border-radius: 20px 0 20px 0;
-        background-color: white;
-        /* border-radius: 100%; */
-        border: none;
-        margin-left: 5px;
-        outline: none;
-        cursor: pointer;
-      }
-      .list-button:active {
-        background-color: lightskyblue;
-        color: white;
-      }
-
-      .list-button i {
-        font-size: 30px;
-      }
-      .list-container{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin-top: 30px;
-        }
-        .list-list{
-            min-width: 25%;
-            list-style: none;
-            
-        }
-        .list{
-            margin: 18px;
-            border-radius: 20px 0 20px 0;
-            padding: 25px;
-            background-color: white;
-            color: black;
-            font-size: 20px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            
-        }
-        .list-item{
-            flex:1;
-            margin: 0 8px;
-        }
-        .chk-btn{
-            background-color: rgb(93, 250, 145);
-            border-radius: 100%;
-            color: black;
-            border: none;
-            outline: none;
-            padding: 16px;
-            font-size: 16px;
-            cursor: pointer;
-        }
-        .delete-btn{
-            background-color:red;
-            border-radius: 100%;
-            color: white;
-            border: none;
-            outline: none;
-            padding: 16px;
-            font-size: 16px;
-            cursor: pointer;
-        }
-        .fa-strikethrough,.fa-trash{
-            pointer-events: none;
-        }
-        .completed{
-            text-decoration: line-through;
-            opacity: 0.5;
-        }
-
-    </style>
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
   </head>
   <body>
     <h1>To-do List</h1>
@@ -134,63 +22,7 @@
     <div class="list-container">
       <ul class="list-list"></ul>
     </div>
-    <script>
-      var listInput = document.querySelector(".list-input");
-      var listButton = document.querySelector(".list-button");
-      var listList = document.querySelector(".list-list");
-
-      window.onload = function x() {
-        if (localStorage.getItem("listlist")) {
-          listList.innerHTML = localStorage.getItem("listlist");
-        }
-      };
-
-      listButton.onclick = create;
-      listList.onclick = checkdelete;
-
-      function create(e) {
-        e.preventDefault();
-        if (listInput.value === "") {
-          alert("Write some text.");
-        } else {
-          var newDiv = document.createElement("div");
-          newDiv.classList.add("list");
-
-          var newLi = document.createElement("li");
-          newLi.classList.add("list-item");
-          newLi.innerHTML = listInput.value;
-          listInput.value = "";
-          listInput.focus();
-          newDiv.appendChild(newLi);
-
-          var checkbtn = document.createElement("button");
-          checkbtn.classList.add("chk-btn");
-          checkbtn.innerHTML = '<i class="fa fa-strikethrough"></i>';
-          newDiv.appendChild(checkbtn);
-
-          var deletebtn = document.createElement("button");
-          deletebtn.classList.add("delete-btn");
-          deletebtn.innerHTML = '<i class="fa fa-trash"></i>';
-          newDiv.appendChild(deletebtn);
-          listList.appendChild(newDiv);
-
-          // localStorage
-          localStorage.setItem("listlist", listList.innerHTML);
-        }
-      }
-
-      function checkdelete(e) {
-        var item = e.target;
-        if (item.classList[0] === "delete-btn") {
-          var parent = item.parentNode;
-          parent.remove();
-          localStorage.setItem("listlist", listList.innerHTML);
-        }
-        if (item.classList[0] === "chk-btn") {
-          var parent = item.parentNode;
-          parent.classList.toggle("completed");
-        }
-      }
+    <script src="script.js">
     </script>
   </body>
 </html>
