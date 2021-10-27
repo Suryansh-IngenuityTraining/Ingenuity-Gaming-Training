@@ -70,7 +70,7 @@ var animal = [
     }
     function ifWon(){
         if(wordStatus===answer){
-            document.getElementById('inputPanel').innerHTML = 'Conratulations!! You Won!!';
+            document.getElementById('inputPanel').innerHTML = 'Congratulations!! You Won!!';
         }
     }
     function ifLost(){
