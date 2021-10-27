@@ -27,8 +27,17 @@ span{
     color: yellow;
     font-weight: bold;
 }
+.btn{
+    background-image: linear-gradient(magenta,darkred);
+}
+.btn:hover{
+    background-image: linear-gradient(darkblue,darkred);
+}
 .resetButton{
     background-image: linear-gradient(white,cyan);
+}
+.resetButton:hover{
+    background-image: linear-gradient(white,yellow);
 }
 @media(max-width:700px){
     *{
