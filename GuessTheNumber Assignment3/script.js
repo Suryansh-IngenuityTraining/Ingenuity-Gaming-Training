@@ -1,4 +1,4 @@
-var y = Math.floor(Math.random()*100 + 1);
+var y = Math.floor(Math.random()*100 + 1); //number generated
 document.getElementById('display').innerHTML = "You are ready to play";
 var guess = 1;
 document.getElementById("resetnum").onclick = function(){
