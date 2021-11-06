@@ -123,6 +123,7 @@ function ballWallCollision(){
     }
     if(ball.y + ball.radius > cvs.height){
         LIFE--;
+        LIFE_LOST.play();
         resetBall();
     }
 }
