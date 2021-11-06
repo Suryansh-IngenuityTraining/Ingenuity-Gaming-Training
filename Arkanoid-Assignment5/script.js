@@ -1,5 +1,5 @@
 // defining variables 
-const cvs = document.getElementById("breakOut");
+const cvs = document.getElementById("mycanvasid");
 const ctx = cvs.getContext("2d");
 const PADDLE_WIDTH = 100;
 const PADDLE_HEIGHT = 20;
