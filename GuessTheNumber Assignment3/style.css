@@ -1,0 +1,33 @@
+body{
+    margin: 0 auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container{
+    position: relative;
+    text-align: center;
+    background-image: linear-gradient(yellow,white);
+    font-size: 30px;
+ }
+input{
+    
+    border: solid 2px black;
+    height: 20px;
+}
+.suryHint{
+    height: 25px;
+    background-color: gold;
+    cursor: pointer;
+}
+.guessSubmit{
+    background-color: skyblue;
+    color: blue;
+    height: 25px;
+    cursor: pointer;
+}
+.guessField{
+    background-color: white;
+}
+.reset{
+    height: 25px;
+    cursor: pointer;
+}
