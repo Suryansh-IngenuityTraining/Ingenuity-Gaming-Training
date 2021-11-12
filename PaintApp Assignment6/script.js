@@ -2,7 +2,6 @@ const rect = document.querySelector('#rect');
 const circle = document.querySelector('#circle');
 const line = document.querySelector('#line');
 
-const brush = document.querySelector('#brush');
 const mycolor = document.querySelector('#mycolor');
 
 const inc = document.querySelector('#inc');
@@ -107,7 +106,6 @@ function drawCircle() {
 
 function erase() {
     syc.putImageData(snap, 0, 0);
-    // syc.strokeStyle = 'black';
     syc.lineWidth = 2;
     syc.beginPath();
     syc.arc(
@@ -117,10 +115,8 @@ function erase() {
       0,
       Math.PI * 2
     );
-    // syc.stroke();
     syc.fillStyle = 'white';
     syc.fill();
-    // syc.closePath();
   }
 
 
