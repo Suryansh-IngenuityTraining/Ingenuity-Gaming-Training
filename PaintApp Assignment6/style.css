@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#surycanvas{
+    border: 2px blue solid;
+}
+#surycanvas:active{
+    cursor: crosshair;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+}
+#inputs{
+    display: inline-flex;
+    width: 50vw;
+    justify-content: space-evenly;
+}
+button{
+    padding: 5px;
+    font-size: 14px;
+    background-image: linear-gradient(yellow,white);
+    cursor: pointer;
+}
+h1{
+    color: red;
+}
+button:hover{
+    background-image: linear-gradient(green,white);
+    color: white;
+}
