@@ -1,0 +1,28 @@
+{
+ActiveCases: 19351584
+Case_Fatality_Rate: 2.01
+Continent: "All"
+Country: "Total:"
+Deaths_1M_pop: 658.5
+Infection_Risk: 0
+NewCases: 125273
+NewDeaths: 2908
+NewRecovered: 125441
+Population: "0"
+Recovery_Proporation: 90.41
+Serious_Critical: 78137
+Test_Percentage: 0
+Tests_1M_Pop: 0
+ThreeLetterSymbol: null
+TotCases_1M_Pop: 32739.5
+TotalCases: 255197499
+TotalDeaths: 5132575
+TotalRecovered: "230713340"
+TotalTests: "0"
+TwoLetterSymbol: null
+id: "8afc6a35-b9b8-4124-8bce-9c489db0eab4"
+one_Caseevery_X_ppl: 0
+one_Deathevery_X_ppl: 0
+one_Testevery_X_ppl: 0
+rank: 0
+}
