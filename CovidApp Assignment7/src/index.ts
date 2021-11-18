@@ -2,8 +2,11 @@ import {APIService} from './ts/APPService';
 
 const api = new APIService();
 
+const table = document.getElementById('table');
+
 const btn = document.querySelector('#btn');
 const selected = document.querySelector('#continentSelect');
+const main = document.querySelector('#main');
 let selectedValue: string;
 const x:string = "https://vaccovid-coronavirus-vaccine-and-treatment-tracker.p.rapidapi.com/api/";
 var y:string;
@@ -19,34 +22,40 @@ btn.addEventListener('click',(event) => {
         alert('Showing All data rank-wise, wait a sec it may take time');
             }
     if(selectedValue == 'Asia'){
+        alert('wait a sec and scroll to your data')
+    
         y = "npm-covid-data/asia";
         res = x + y;
         api.INFO_DATA = res;
             }
     if(selectedValue == 'Africa'){
+        alert('wait a sec and scroll to your data')
         y = "npm-covid-data/africa";
         res = x + y;
         api.INFO_DATA = res;
             }
     if(selectedValue == 'Europe'){
+        alert('wait a sec and scroll to your data')
         y = "npm-covid-data/europe";
         res = x + y;
         api.INFO_DATA = res;
                     }
     if(selectedValue == 'North America'){
+        alert('wait a sec and scroll to your data')
         y = "npm-covid-data/northamerica";
         res = x + y;
         api.INFO_DATA = res;
                         }
     if(selectedValue == 'South America'){
+        alert('wait a sec and scroll to your data')
         y = "npm-covid-data/southamerica";
         res = x + y;
         api.INFO_DATA = res;
             }
     api.getCovidData().then(data => {
+       
         const keys = Object.keys(data[0]);
         const topRow = document.createElement('tr');
-        const table = document.getElementById('table');
         table.appendChild(topRow);
         keys.forEach(key => {
             const th = document.createElement('th');
@@ -63,5 +72,6 @@ btn.addEventListener('click',(event) => {
             });
             table.appendChild(row);
             })
+            
         });
 });
