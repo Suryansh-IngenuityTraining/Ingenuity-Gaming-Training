@@ -16,7 +16,7 @@ btn.addEventListener('click',(event) => {
         y = "npm-covid-data/";
         res = x + y;
         api.INFO_DATA = res;
-        alert('Showing All data rank-wise, wait a sec it may take time')
+        alert('Showing All data rank-wise, wait a sec it may take time');
             }
     if(selectedValue == 'Asia'){
         y = "npm-covid-data/asia";
@@ -24,24 +24,22 @@ btn.addEventListener('click',(event) => {
         api.INFO_DATA = res;
             }
     if(selectedValue == 'Africa'){
-        y = "npm-covid-data/asia";
+        y = "npm-covid-data/africa";
         res = x + y;
         api.INFO_DATA = res;
             }
-    if(selectedValue == 'All'){
-        y = "npm-covid-data/";
+    if(selectedValue == 'Europe'){
+        y = "npm-covid-data/europe";
         res = x + y;
         api.INFO_DATA = res;
-        alert('Showing All data rank-wise, wait a sec it may take time')
-            }
-    if(selectedValue == 'All'){
-        y = "npm-covid-data/";
+                    }
+    if(selectedValue == 'North America'){
+        y = "npm-covid-data/northamerica";
         res = x + y;
         api.INFO_DATA = res;
-        alert('Showing All data rank-wise, wait a sec it may take time')
-            }
-    else{
-        y = "npm-covid-data/asia";
+                        }
+    if(selectedValue == 'South America'){
+        y = "npm-covid-data/southamerica";
         res = x + y;
         api.INFO_DATA = res;
             }
