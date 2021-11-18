@@ -4,13 +4,50 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        #table th, tr, td{
+            border: 2px solid black;
+            margin: 3px;
+            padding: 3px;
+            text-align: center;
+        }
+        nav{
+            display: flex;
+            padding: 20px;
+            font-size: 24px;
+            width: 100vw;
+            justify-content: center;
+            align-items: center;
+            background-image: linear-gradient(blue,white);
+        }h1{
+            color: darkblue;
+            padding: 20px;
+        }
+    </style>
+    <!-- <link rel="stylesheet" href="style.css"> -->
     <title>Covid Vacc app</title>
 </head>
 <body>
+    <h1>Showing data rank-wise</h1>
+    <nav>
+        <form>
+            <label for="continent">Choose a continent:</label>
+            <select name="continent" id="continentSelect">
+                <option value="All">All</option>
+                <option value="Africa">Africa</option>
+                <option value="Asia">Asia</option>
+                <option value="Europe">Europe</option>
+                <option value="North America">North America</option>
+                <option value="South America">South America</option>
+            </select>
+            <button id="btn">Submit</button>
+        </form>
+    </nav>
     <main>
         <table id="table">
             
         </table>
     </main>
+    <script src="./src/index.js"></script>
 </body>
 </html>
