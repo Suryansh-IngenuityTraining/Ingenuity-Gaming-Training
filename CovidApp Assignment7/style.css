@@ -1,6 +1,18 @@
-*{
-    margin: 0;
-}
-body{
-    background-color: red;
-}
+
+        table, th, tr, td{
+            border: 2px solid black;
+            margin: 3px;
+            padding: 3px;
+            text-align: center;
+        }
+        nav{
+            display: flex;
+            padding: 20px;
+            font-size: 24px;
+            width: 100vw;
+            justify-content: center;
+            align-items: center;
+        }h1{
+            color: darkblue;
+            padding: 20px;
+        }
