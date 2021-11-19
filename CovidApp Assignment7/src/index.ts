@@ -1,4 +1,4 @@
-import { APIService } from './ts/APPService';
+import { APIService } from './ts/API';
 
 const api = new APIService();
 
