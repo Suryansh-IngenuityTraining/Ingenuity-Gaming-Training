@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        table, th, tr, td{
+            border: 2px solid blue;
+            margin: 3px;
+            padding: 3px;
+            text-align: center;
+        }
+        nav{
+            padding: 20px;
+            font-size: 24px;
+            width: 95vw;
+            background-image: linear-gradient(blue,white);
+        }
+        h1{
+            color: darkblue;
+            padding: 20px;
+        }
+        #container{
+            display: flex;
+            flex-direction: row;
+        }
+        #container div{
+            flex-basis: 33%;
+            border-left: 2px black;
+            margin: 10px;
+            padding: 10px;
+        }
+        #covidData{
+            background-image: linear-gradient(yellow, white);
+        }
+        #covidNews{
+            background-image: linear-gradient(red, white);
+        }
+        #covidVaccine{
+            background-image: linear-gradient(orange,white);
+        }
+        #covidNews label,#covidVaccine label{
+            color: white;
+        }
+    </style>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <title>API Assignment</title>
+</head>
+<body>
+    <h1>Search data regarding covid</h1>
+    <nav>
+        <div id="container">
+            <div id="covidData">
+                <form>
+                    <label for="continent">Choose a continent:</label>
+                    <select name="continent" id="continentSelect">
+                        <option value="All">All</option>
+                        <option value="Africa">Africa</option>
+                        <option value="Asia">Asia</option>
+                        <option value="Europe">Europe</option>
+                        <option value="North America">North America</option>
+                        <option value="South America">South America</option>
+                    </select>
+                    <button id="btn">Search</button>
+                </form>
+            </div>
+            <div id="covidNews">
+                <form>
+                    <label for="coviNews">Choose treatment type:</label>
+                    <select name="coviNews" id="covidNewsSelect">
+                        <option value="All">All</option>
+                        <option value="Specific">Specific Category</option>
+                        <option value="Clinical">Clinical treatments</option>
+                    </select>
+                    <button id="btn1">Search</button>
+                </form>
+            </div>
+            <div id="covidVaccine">
+            <form>
+                <label for="coviVacc">Choose phase for vaccine: </label>
+                <select name="coviVacc" id="coviVaccSelect">
+                    <option value="Phase1">Phase 1</option>
+                    <option value="Phase2">Phase 2</option>
+                    <option value="Phase3">Phase 3</option>
+                    <option value="Phase4">Phase 4</option>
+                </select>
+                <button id="btn2">Search</button>
+            </form>
+            </div>
+        </div>
+        
+    </nav>
+    <main id="main">
+        <div id="showData"></div>
+    </main>
+    <script src="./src/index.js"></script>
+</body>
+</html>
