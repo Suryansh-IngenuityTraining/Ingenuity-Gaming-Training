@@ -34,11 +34,9 @@ export class Game extends Container {
     this.addChild(pin);
   }
   public spin() {
-      var stopAngle = DEG_TO_RAD * (10 * this.sliceDegree - this.sliceDegree / 2);
-    // const random = Math.floor(Math.random() * config.slices);
+    var stopAngle = DEG_TO_RAD * (10 * this.sliceDegree - this.sliceDegree / 2);
     const weight = Math.floor(Math.random()*100);
     var prizeIndex:number ;
-    // console.log(weight);
     if(weight == 2){ //here weight is 1
         prizeIndex = 9;
         stopAngle = DEG_TO_RAD * (1 * this.sliceDegree - this.sliceDegree / 2);
