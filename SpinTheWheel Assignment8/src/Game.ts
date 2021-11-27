@@ -37,43 +37,43 @@ export class Game extends Container {
     var stopAngle = DEG_TO_RAD * (10 * this.sliceDegree - this.sliceDegree / 2);
     const weight = Math.floor(Math.random()*100);
     var prizeIndex:number ;
-    if(weight == 2){ //here weight is 1
+    if(weight == 2){ //here weight is 1 for 1000 points
         prizeIndex = 9;
         stopAngle = DEG_TO_RAD * (1 * this.sliceDegree - this.sliceDegree / 2);
     }
-    if(weight == 3 || weight == 4){ //here weight is 2
+    if(weight == 3 || weight == 4){ //here weight is 2 for 500 points
         prizeIndex = 8;
         stopAngle = DEG_TO_RAD * (2 * this.sliceDegree - this.sliceDegree / 2);
     }
-    if(weight>=4 && weight<=8){ //here weight is 5
+    if(weight>=4 && weight<=8){ //here weight is 5 for 200 points
         prizeIndex = 7;
         stopAngle = DEG_TO_RAD * (3 * this.sliceDegree - this.sliceDegree / 2);
     }
-    if(weight>=9 && weight<=15){ //here weight is 7
+    if(weight>=9 && weight<=15){ //here weight is 7 for 100 points
         prizeIndex = 6;
         stopAngle = DEG_TO_RAD * (4 * this.sliceDegree - this.sliceDegree / 2);
     }
-    if(weight>=16 && weight<=25){ //here weight is 10
+    if(weight>=16 && weight<=25){ //here weight is 10 for 50 points
         prizeIndex = 5;
         stopAngle =  DEG_TO_RAD * (5 * this.sliceDegree - this.sliceDegree / 2);
     } 
-    if(weight>=26 && weight<=37){ //here weight is 12
+    if(weight>=26 && weight<=37){ //here weight is 12 for 20 points
         prizeIndex = 4;
         stopAngle = DEG_TO_RAD * (6 * this.sliceDegree - this.sliceDegree / 2);
     }
-    if(weight >= 38 && weight <= 50){ //here weight is 13
+    if(weight >= 38 && weight <= 50){ //here weight is 13 for 10 points
         prizeIndex = 3;
         stopAngle = DEG_TO_RAD * (7 * this.sliceDegree - this.sliceDegree / 2);
     }
-    if(weight >= 51 && weight <= 65){ //here weight is 15
+    if(weight >= 51 && weight <= 65){ //here weight is 15 for 5 points
         prizeIndex = 2;
         stopAngle = DEG_TO_RAD * (8 * this.sliceDegree - this.sliceDegree / 2);
     }
-    if(weight >= 66 && weight <= 81){ //here weight is 16
+    if(weight >= 66 && weight <= 81){ //here weight is 16 for 3 points
         prizeIndex = 1;
         stopAngle = DEG_TO_RAD * (9 * this.sliceDegree - this.sliceDegree / 2);
     }
-    if(weight >= 82 && weight <= 100){ //here weight is 19
+    if(weight >= 82 && weight <= 100){ //here weight is 19 for 1 point
         prizeIndex = 0;
         stopAngle = DEG_TO_RAD * (10 * this.sliceDegree - this.sliceDegree / 2);
     }
