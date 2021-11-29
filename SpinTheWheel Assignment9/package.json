@@ -26,6 +26,7 @@
     "workbox-webpack-plugin": "^6.4.1"
   },
   "dependencies": {
-    "gsap": "^3.8.0"
+    "gsap": "^3.8.0",
+    "pixi.js": "^6.2.0"
   }
 }

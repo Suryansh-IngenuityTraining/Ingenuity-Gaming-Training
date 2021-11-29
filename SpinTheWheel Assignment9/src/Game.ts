@@ -36,7 +36,7 @@ export class Game extends Container {
   public spin() {
     var stopAngle = DEG_TO_RAD * (10 * this.sliceDegree - this.sliceDegree / 2);
     const weight = Math.floor(Math.random()*100);
-    var prizeIndex:number ;
+    var prizeIndex:number = 0 ;
     if(weight == 2){ //here weight is 1 for 1000 points
         prizeIndex = 9;
         stopAngle = DEG_TO_RAD * (1 * this.sliceDegree - this.sliceDegree / 2);
