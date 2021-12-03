@@ -15,7 +15,7 @@ app.loader.add("gold-coins", "https://pixijs.io/particle-emitter/examples/images
 .add("bubble", "https://pixijs.io/particle-emitter/examples/images/Bubbles99.png")
 .add('snow', "https://cdn-icons-png.flaticon.com/128/2336/2336319.png")
 .add('sparks',"https://pixijs.io/particle-emitter/examples/images/Sparks.png")
-.add("diamond","https://cdn-icons.flaticon.com/png/512/4251/premium/4251687.png?token=exp=1638454731~hmac=86c9b8e151b143ae555eabbb90fd69ea")
+.add("diamond","https://cdn-icons-png.flaticon.com/512/6237/6237125.png")
 .load((l, r) => {
 
   const container = new Container();
