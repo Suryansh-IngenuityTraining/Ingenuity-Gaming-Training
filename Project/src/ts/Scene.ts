@@ -22,7 +22,6 @@ export class Scene extends Container {
   }
 
   public init(): void {
-   // this.music.loopPlay();
     this.createSprite('gameBG', this.center.x, this.center.y);
     this.createSprite('reelBG', this.center.x, this.center.y);
     const logo = this.createSprite('gameLogo', this.center.x, 50);
@@ -41,7 +40,6 @@ export class Scene extends Container {
     spin.on('click', () => {
       reels.spin();
       this.reelTone.playMusic();
-      // as this sound stops, the reels will stop to move.
       spin.enabled = false;
       setTimeout(() => spin.enabled = true, 3500)
     });
@@ -56,9 +54,7 @@ export class Scene extends Container {
     return this.addChild(sprite);
   }
 
-  // eslint-disable-next-line class-methods-use-this
   public update(delta?: number) {
-    // eslint-disable-next-line no-unused-expressions
     delta;
   }
 }

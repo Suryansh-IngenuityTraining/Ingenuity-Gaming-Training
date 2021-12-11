@@ -1,4 +1,4 @@
-/* eslint-disable max-len */
+
 export const SymbolIDs: { [key: number]: string } = {
   1: 'h1_neptune',
   2: 'h2_siren',

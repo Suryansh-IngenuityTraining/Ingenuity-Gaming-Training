@@ -28,9 +28,7 @@ function loadComplete(
   onCompleteCallback:(l:Loader, r: ResourceType)=>void,
 ): void {
   setResources(resources);
-  //console.log('event ');
   setTimeout(() => {
- //   const sprite = new Sprite(getTexture('start') as Texture);
     (<HTMLDivElement>document.querySelector('#bar')).style.visibility = 'hidden';
     (<HTMLDivElement>document.querySelector('#message')).innerHTML = 'Click/Tap here to continue';
     const preloader = (<HTMLDivElement>document.querySelector('#preloader'));
@@ -44,7 +42,6 @@ function loadComplete(
     preloader.onclick = (e) => {
       console.log('event ', e);
       preloader.style.display = 'none';
-      // document.removeChild(preloader);
       onCompleteCallback(loader, resources);
     };
   }, 1000);

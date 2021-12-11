@@ -15,17 +15,14 @@ export class Button extends Sprite {
     this.buttonMode = value;
     this.texture = value ? this.up : this.disabled;
   }
-  //constructor for the buttons.
   constructor(up: string, over: string, down: string, disabled: string) {
     super(getTexture(up) as Texture);
-    //texturer for all of the buttons.
     this.up = this.texture;
     this.down = getTexture(down) as Texture;
     this.over = getTexture(over) as Texture;
     this.disabled = getTexture(disabled) as Texture;
 
     this.anchor.set(0.5);
-    //add the interaction mode and nutton like activity on the button image by following methods.
     this.interactive = true;
     this.buttonMode = true;
     this.on('pointerover', () => {

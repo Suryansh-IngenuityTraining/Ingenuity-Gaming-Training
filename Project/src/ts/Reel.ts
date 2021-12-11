@@ -28,22 +28,7 @@ export class Reel extends Container {
     const startY = -(symHeight * 2);
     for (let i = 0; i < rows + 4; i++) {
       const symId = this.getSymbolID(i);
-      // changes
-
-      // if (this.reelNum == 1) {
-      //   this.arr1.push(symId)
-      // }
-      // if (this.reelNum == 2) {
-      //   this.arr2.push(symId)
-      // }
-      // if (this.reelNum == 3) {
-      //   this.arr3.push(symId)
-      // }
-      // if (this.reelNum == 4) {
-      //   this.arr4.push(symId)
-      // }
-
-      // changes
+     
 
 
       const symbol = new ReelSymbol(symId);
@@ -53,7 +38,6 @@ export class Reel extends Container {
       this.symbols.push(symbol);
 
     }
-    // this.currentStop--;
     this.currentStop = Math.floor(Math.random() * 70 + 21);
 
   }
@@ -81,7 +65,6 @@ export class Reel extends Container {
               symbol.setIconTexture(this.getSymbolID(i));
 
             });
-            // this.currentStop--;
 
 
             this.currentStop = Math.floor(Math.random() * 70 + 21);
